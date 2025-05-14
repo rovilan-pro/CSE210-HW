@@ -1,0 +1,36 @@
+Version Control System also known as VCS, Helps people and team collaborators track changes in a program/project. 
+It also simplifies the work that has to be done, also undone mistakes or changes that occured, and track the history
+that take place and when it happened.
+
+Let us use the README.md which is provided in this repository for example to truly deepen our understanding. after all 
+a example is the best way for us to truly understand things. 
+
+At first the program/project README.md only contains this set of words.
+# CSE 210
+
+As you can see in Github a web compilations of program, 
+There are no changes. so we will use Git for it to apply changes that occured in VScode.
+Let us do it in the most easiest way possible for me aleast.
+First We create a repository if theres no repository yet.
+after that in VScode We can Clone the repository, Then input the code.
+
+Now we create changes in VScode
+# CSE 210
+# Rovilan Alec Dela Torre
+
+Here is the fun part.
+Click Source Control, if you want to stage changes click the plus sign. if you want to remove it click the minus sign.
+then after the changes there is a rectangle with words "message" input a message for example "Added Name",
+Then click commit then sync and you will see changes.
+
+If You want to see if the changes applied.
+You can also check the terminal in VScode to be sure if changes truly applied or see the program's status.
+Input in terminal this code
+# git status
+
+you can also see the changes, codes to input if you want to add or restore the file for example
+to add do 
+# git add README.md
+then # git push
+to restore 
+# git restore README.md
