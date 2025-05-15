@@ -1,0 +1,50 @@
+Program's Purpose
+What does the program do?   Journal Entry, Store Data, With Option Menu
+What user inputs does it have?   Write, Display, Save, Load, Exit
+What output does it produce?   Display Stored Data & Create Multiple Journals   
+How does the program end?   Exit Input
+
+[
+    Program.cs
+        using System
+        using 
+        using 
+
+        //Write Function
+
+
+       //Display Function
+
+
+        //Save Function 
+
+
+        //Load Function
+
+
+        //Exit Function
+
+
+]
+
+[
+    Entry.cs
+        Public class Entry 
+
+        Public int _DateTime;
+        Public String _PromptText;
+        Public String _EntryText;
+        Public Void Display()
+
+]
+
+[
+    Prompt.cs
+        Public class Prompt
+
+        Prompt<List> = new Prompt<List>
+
+        //Prompt Generator
+            Public String GiveRandomPromt();
+
+]
