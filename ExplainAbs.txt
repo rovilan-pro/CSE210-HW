@@ -1,0 +1,21 @@
+Abstraction plays a big part when it comes to programming. When it comes to Abstraction,
+It only hows the required information to the user. while the rest of the information of 
+the program is hidden. It simplifies the program and organizes the program to different
+segments. Which provide organize and neet codes. 
+
+For example
+
+The Journal program, We have the main program then the sub-programs.
+program(Main)
+
+Journal(Sub)
+
+Entry(Sub)
+
+Prompt(Sub)
+
+
+With this the user will only see the program and the rest is hidden away. Still the 
+rest of the program which is hidden away is still important without it, it's either 
+Filled with errors or the program will be filled with all of the combine code nessesary. 
+
