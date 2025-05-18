@@ -7,6 +7,6 @@ public class Entry
     //Display, Output of Entry
     public void Display()
     {
-        Console.WriteLine($"{_DateTime}, {_PromptText} -- {_PromptText}");
+        Console.WriteLine($"{_DateTime}|{_PromptText}|{_EntryText}");
     }
 }

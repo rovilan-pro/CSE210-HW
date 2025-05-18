@@ -7,13 +7,59 @@ For example
 
 The Journal program, We have the main program then the sub-programs.
 program(Main)
+    using System;
+
+class Program
+
+    static void Main(string[] args)
+
+        Journal journal = new Journal();
+        Prompt promptGenerator = new Prompt();
 
 Journal(Sub)
-
+    //Write Function
+    //Display Funtion
+    //Save Function
+    //Load Function
+    
 Entry(Sub)
+public class Entry
+{
+    public string _DateTime;
+    public string _PromptText;
+    public string _EntryText;
+
+    //Display, Output of Entry
+    public void Display()
+    {
+        Console.WriteLine($"{_DateTime}|{_PromptText}|{_EntryText}");
+    }
+}
 
 Prompt(Sub)
+using System;
+using System.Collections.Generic;
 
+public class Prompt
+{
+    //List
+    public List<string> _prompts = new List<string>
+    {
+      "Who made you smile today?",
+      "What did you learn today?",
+      "What did you enjoy the most today?",
+      "Write your goals for today.",
+      "Write your achievements for today."
+    };
+
+    //Prompt Generator
+    public string GiveRandomPrompt()
+    {
+        Random randoM = new Random();
+        int index = randoM.Next(_prompts.Count);
+        return _prompts[index];
+    }
+}
 
 With this the user will only see the program and the rest is hidden away. Still the 
 rest of the program which is hidden away is still important without it, it's either 
