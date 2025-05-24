@@ -1,0 +1,46 @@
+Program's Purpose
+What does the program do?   Generate Random Scripture Verses
+What user inputs does it have?   Scripture Generator 
+What output does it produce?    Memorize Scriptures and Generate 
+How does the program end?   Automatic
+
+program.cs
+using System
+
+Scripture.cs
+Public class Scripture
+    Reference<List> = new Reference<List>
+    Word<List> = new <Word>
+
+    Scripture(Reference : Reference,text : string);
+
+    HideRandomWords(numberToHide : int): Void
+    GetDisplayText( ):
+    isCompletelyHidden(): bool
+
+
+Reference.cs
+Public class Reference
+    private string _book;
+    private int _chapter;
+    private int _verse;
+    private int _endVerse;
+
+    Reference
+    (book : string, chapter : int, verse : int );
+    Reference
+    (book : string, chapter : int, startVerse : int, endVerse : int);
+
+
+Word.cs
+Public class Word
+    Public string _text;
+    private bool _isHidden;
+
+    Word(text : string)
+
+    hide() : Void
+    show() : Void
+    isHidden : bool
+
+    GetDisplayText() : string
