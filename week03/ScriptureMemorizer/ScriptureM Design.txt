@@ -1,6 +1,6 @@
 Program's Purpose
-What does the program do?   Generate Random Scripture Verses
-What user inputs does it have?   Scripture Generator 
+What does the program do?   Generate Random Clearings in the Verse
+What user inputs does it have?   Scripture Memorizer
 What output does it produce?    Memorize Scriptures and Generate 
 How does the program end?   Automatic
 

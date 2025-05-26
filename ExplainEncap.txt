@@ -1,1 +1,29 @@
-Encapsulation is a process that 
+Encapsulation involves batching up data and methods that operates in a single unit. a class for example.
+The Likes of this are examples private and public. which prevents external code from altering internal code. 
+Which maintain consistency to the said program.
+
+For example
+public class Word
+{
+    private string _text;
+    public bool IsHidden { get; private set; }
+
+    public Word(string text)
+    {
+        _text = text;
+        IsHidden = false;
+    }
+
+    public void Hide()
+    {
+        IsHidden = true;
+    }
+
+    public string GetDisplayText()
+    {
+        return IsHidden ? "____" : _text;
+    }
+}
+
+we can see that the privated _text is only to be used to its class while the rest which is public, 
+can be accessible to the program in your project. 
