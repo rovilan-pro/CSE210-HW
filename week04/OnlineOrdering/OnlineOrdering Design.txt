@@ -1,0 +1,87 @@
+Program's Purpose
+What does the program do?   Product ordering System
+What user inputs does it have?   Orders and Products
+What output does it produce?    Packing Labels, Shipping labels, and compute final prices 
+How does the program end?   Automatic
+
+Program.cs
+Using System;
+
+class Program
+    static void Main(string[] args)
+    {
+
+    }
+
+Product.cs
+public class Product;
+
+    private string _name;
+    private string _productId;
+    private int _price;
+    private int _quantity;
+
+    public GetTotalCost()
+    {
+
+    }
+
+    public void display
+    {
+
+    }
+
+Customer.cs
+public class Customer;
+
+    private string _name;
+    private string _address;
+
+    public GetName()
+    {
+
+    }
+
+    public GetAddress()
+    {
+
+    }
+
+Address.cs
+public class Address;
+
+    private string _street;
+    private string _city;
+    private string state/province;
+    private string _country;
+
+    public GetfullAddress()
+    {
+
+    }
+
+Order.cs
+public class Order;
+
+    private List<Product> _products = new List<Product>();
+    private Costumer _costumer;
+
+    public void
+    {
+
+    }
+
+    public GetTotalCost();
+    {
+
+    }
+
+    public GetPackingLabel();
+    {
+
+    }
+
+    public GetShippingLabel();
+    {
+        
+    }

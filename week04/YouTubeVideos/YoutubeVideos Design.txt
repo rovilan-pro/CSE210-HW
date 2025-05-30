@@ -1,0 +1,48 @@
+Program's Purpose
+What does the program do?   Track Youtube Comments and Videos
+What user inputs does it have?   User Input Info For Video and Comments
+What output does it produce?   Display each video along with its comments.
+How does the program end?   Automatic
+
+Program.cs
+using System;
+using System.Collections.Generic;
+
+Class Program
+    static void Main(string[] args)
+    {
+
+    }
+
+Video.cs
+public class Video
+    public string _title;
+    public string _author; //seconds//
+    public int _length;
+
+    private List<Comment> _comments;
+
+    {
+
+    }
+
+    public void display()
+    console.writeline 
+    {
+
+    }
+
+Comments.cs
+public class Comments
+    public string _person;
+    public string _text;
+
+    {
+
+    }
+
+    public void display()
+    {
+
+    }
+
