@@ -1,0 +1,58 @@
+Inheritance is a process where you no longer need to rewrite the same class, 
+if multiple classes shares similar characteristics.
+For example in a Class you have Assignment and you also had MathAssignment. 
+Instead of rewriting all the properties and methods that both classes share, 
+MathAssignment can inherit them from Assignment.
+
+For example:
+
+Base class
+public class Assignment
+{
+    private string _studentName;
+    private string _topic;
+
+    public Assignment(string studentName, string topic)
+    {
+        _studentName = studentName;
+        _topic = topic;
+    }
+
+    public string GetStudentName()
+    {
+        return _studentName;
+    }
+
+    public string GetTopic()
+    {
+        return _topic;
+    }
+
+    public string GetSummary()
+    {
+        return _studentName + " - " + _topic;
+    }
+}
+
+This is the Base class it contains the code that can be reused in MathAssignment.
+
+Sub class
+public class MathAssignment : Assignment
+{
+    private string _textbookSection;
+    private string _problems;
+
+    public MathAssignment(string studentName, string topic, string textbookSection, string problems)
+        : base(studentName, topic)
+    {
+        _textbookSection = textbookSection;
+        _problems = problems;
+    }
+
+    public string GetHomeworkList()
+    {
+        return $"Section {_textbookSection} Problems {_problems}";
+    }
+}
+
+This is the sub class we can see that the codes are more simplier and organized.

@@ -1,0 +1,53 @@
+Program's Purpose
+What does the program do?   Activity Maker
+What user inputs does it have?   Has Settings and Displays
+What output does it produce?   Activities such as Breathing, Listing, and Reflecting
+How does the program end?   Automatic
+
+Program.cs
+//Sample
+
+
+Activity.cs
+Public class Activity
+    private string _name;
+    private string _description;
+    private int _duration;
+
+    public void DisplayStartingMessage();
+    public void DisplayEndingMessage();
+    public void ShowSpinner(seconds : int);
+    public void ShowCountDown(second : int);
+
+
+BreathingActivity.cs
+public class BreathingActivity
+
+public void Run();
+
+
+ListingActivity.cs
+public class ListingActivity
+
+    private int _count;
+    List<string> _prompts;
+
+    public void Run();
+    public void GetRandomPrompt();
+    public void GetListFromUser(); 
+    {
+        List<string>
+    }
+
+
+ReflectingActivity.cs
+public class ReflectingActivity
+
+    private List<string> _prompts; 
+    private List<string> _questions;
+
+    public void Run();
+    public void GetRandomPrompt();
+    public void GetRandomQuestion();
+    public void DisplayPrompt();
+    public void DisplayQuestions();
