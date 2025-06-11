@@ -1,0 +1,102 @@
+Polymorphism is a ability to take many forms,What it does is to make changes 
+in behavior in the code in the sub class inherited from its base class.
+Meaning creating new derivations and overriding methods, While using a shared interface.
+Which they in herited from there Base class without creating big changes in the program.
+For Example:
+Base class 
+namespace employee_demo
+{
+    public abstract class Employee
+    {
+        protected string _name;
+        protected string _idnumber;
+
+        public Employee()
+        {
+
+        }
+
+        public string GetName()
+        {
+            return _name;
+        }
+
+        public void SetName(string name)
+        {
+            _name = name;
+        }
+
+        public string GetIdnumber()
+        {
+            return _idnumber;
+        }
+
+        public void SetIdnumber(string idnumber)
+        {
+            _idnumber = idnumber;
+        }
+
+        public abstract float GetPay();
+    }
+}
+
+Sub class 1
+
+namespace employee_demo
+{
+    public class SalaryEmployee : Employee
+    {
+        private float _salary = 0;
+
+        public float GetSalary()
+        {
+            return _salary;
+        }
+
+        public void SetSalary(float salary)
+        {
+            _salary = salary;
+        }
+
+        public override float GetPay()
+        {
+            return _salary / 12;
+        }
+    }
+}
+
+Sub class 2
+
+namespace employee_demo
+{
+    public class HourlyEmployee : Employee
+    {
+        private float _payRate = 0;
+        private int _hourlyWorked = 0;
+
+        public float GetPayRate()
+        {
+            return _payRate;
+        }
+
+        public void SetPayRate(float payrate)
+        {
+            _payRate = payrate;
+        }
+
+        public int GethourlyWorked()
+        {
+            return _hourlyWorked;
+        }
+
+        public void SethourlyWorked(int hourlyworked)
+        {
+            _hourlyWorked = hourlyworked;
+        }
+
+        public override float GetPay()
+        {
+            return _hourlyWorked * _payRate;
+        }
+    }
+}
