@@ -1,0 +1,62 @@
+Program's Purpose
+What does the program do?  Help Create Diverse Goals
+What user inputs does it have?  Has a Displayed Menu
+What output does it produce?  Save and Load of Goals 
+How does the program end?  Via Menu
+
+Program.cs
+//Loop Menu
+//Call in GoalManager
+
+GoalManager.cs
+
+_goals : List<Goal>
+_score : int
+
+Start() : void 
+DisplayPlayerInfo() : void
+ListGoalNames() : void
+ListGoalDetails() : void
+CreateGoal() : void
+RecordEvent() : void
+SaveGoals() : void
+LoadGoals() : void
+
+
+Goal.cs
+
+_shortName : string
+_description : string
+_points : int
+
+RecordEvent() : void (Abstract)
+IsComplete() : bool (Abstract)
+GetDetailsString() : string
+GetStringRepresentation() : string (Abstract)
+
+SimpleGoal.cs
+
+_isComplete : bool
+
+RecordEvent() : void (Override)
+IsComplete() : bool (Override)
+GetStringRepresentation() : string (Override)
+
+
+EternalGoal.cs
+
+RecordEvent() : void (Override)
+IsComplete() : bool (Override)
+GetStringRepresentation() : string (Override)
+
+
+ChecklistGoal.cs
+
+_amountCompleted : int
+_target : int
+_bonus : int
+
+RecordEvent() : void (Override)
+IsComplete() : bool (Override)
+GetDetailsString() : string (Override)
+GetStringRepresentation() : string (Override)
