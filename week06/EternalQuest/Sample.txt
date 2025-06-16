@@ -1,0 +1,2 @@
+0
+SimpleGoal:Bathe,Bath in the evening,2,False

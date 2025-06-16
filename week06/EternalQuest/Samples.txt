@@ -1,0 +1,5 @@
+0
+SimpleGoal:Learn to Cook,Learn to cook Japanese cousine.,5,False
+EternalGoal:Marriage,Get marriage in the temple.,50
+CheckListGoal:Laundry,Do Laundry every weekend.,5,15,4,0
+SimpleGoal:Buy Cloths,New Cloths,2,False
