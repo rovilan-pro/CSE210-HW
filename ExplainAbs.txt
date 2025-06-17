@@ -1,5 +1,5 @@
 Abstraction plays a big part when it comes to programming. When it comes to Abstraction,
-It only hows the required information to the user. while the rest of the information of 
+It only shows the required information to the user. while the rest of the information of 
 the program is hidden. It simplifies the program and organizes the program to different
 segments. Which provide organize and neet codes. 
 

@@ -1,0 +1,19 @@
+Abstraction only shows the required information to the user while hiding the rest of the program from the user.
+I use it to make the program neat and organize for example i used the employee class to hide the main function. 
+while using encapsulation, meaning preventing external codes to alter internal code, Making the program consistent.
+The likes of this are using public and private classes. examples are using IdNumber object in my employee class,
+These could only be accessed or changed through methods, which prevented accidental modification from outside the class.
+
+And to make things easier we use the process of Inheritance, to make programming easier.
+Because we no longer need to rewrite same sets of codes to a different set of classes since they share the same characteristics.
+Examples are when class such as employee, HourlyEmployee, and SalaryEmployee. we no longer need to rewrite new sets of program.
+To HourlyEmployee and SalaryEmployee when we can inherit it to employee.
+
+Lastly best way to modify classes in Inheritance is Polymorphism. An ability to take many forms. creating new derivations and overriding methods.
+let's use the our present Example the employee. we use Polymorphism in HourlyEmployee and SalaryEmployee. creating a new method such as a different,
+payment method for the employees on how they receive their pay while not changing a lot in the classes inherited.
+
+This set of methods are completely harmonous to each other creating a easier way to program and maintain.
+where Abstraction create changes without affecting users, encapsulation protects data, Inheritance helps us not rewrite whole sets of codes,
+and Polymorphism creating nre derivations without creating major changes. 
+With this it helps you finish your program in much faster rate. knowing this methods will be a great help of you and me. 
